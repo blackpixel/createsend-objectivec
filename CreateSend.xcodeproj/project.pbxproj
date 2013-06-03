@@ -112,9 +112,7 @@
 		AB45480F15D30D13008B5DC7 /* NSURL+CSAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = AB45480D15D30D13008B5DC7 /* NSURL+CSAPI.h */; };
 		AB45481015D30D13008B5DC7 /* NSURL+CSAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB45480E15D30D13008B5DC7 /* NSURL+CSAPI.m */; };
 		AB5CA51F162846FC00558435 /* CSAuthorizationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CA51D162846FC00558435 /* CSAuthorizationViewController.h */; };
-		AB5CA520162846FC00558435 /* CSAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CA51E162846FC00558435 /* CSAuthorizationViewController.m */; };
 		AB5CA5231628471E00558435 /* CSAPI+iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5CA5211628471E00558435 /* CSAPI+iOS.h */; };
-		AB5CA5241628471E00558435 /* CSAPI+iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5CA5221628471E00558435 /* CSAPI+iOS.m */; };
 		AB63260715DD780E0015100D /* CSSubscriberAction.h in Headers */ = {isa = PBXBuildFile; fileRef = AB63260515DD780E0015100D /* CSSubscriberAction.h */; };
 		AB63260815DD780E0015100D /* CSSubscriberAction.m in Sources */ = {isa = PBXBuildFile; fileRef = AB63260615DD780E0015100D /* CSSubscriberAction.m */; };
 		AB690BB115644C820093FC91 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = AB690BAF15644C820093FC91 /* NSData+Base64.h */; };
@@ -1049,8 +1047,6 @@
 				AB63260815DD780E0015100D /* CSSubscriberAction.m in Sources */,
 				AB8BC21015DD7A5000EF1665 /* CSSubscriberHistoryItem.m in Sources */,
 				AB8BC21415DD867D00EF1665 /* CSSubscriberImportResult.m in Sources */,
-				AB5CA520162846FC00558435 /* CSAuthorizationViewController.m in Sources */,
-				AB5CA5241628471E00558435 /* CSAPI+iOS.m in Sources */,
 				A315C1CE167B82C00020C198 /* CSBillingDetails.m in Sources */,
 				A3BE060A16820D6400858A00 /* CSCampaignEmailClient.m in Sources */,
 				A35F729A168C61E8000BCE27 /* CSListForSubscriber.m in Sources */,
@@ -1109,7 +1105,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -1130,7 +1126,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1138,7 +1134,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -1152,7 +1148,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1160,10 +1156,12 @@
 		AB9123111563E8620089DE3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DSTROOT = /tmp/createsend_objc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CreateSend/CreateSend-Prefix.pch";
 				PRODUCT_NAME = CreateSend;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1171,10 +1169,12 @@
 		AB9123121563E8620089DE3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DSTROOT = /tmp/createsend_objc.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CreateSend/CreateSend-Prefix.pch";
 				PRODUCT_NAME = CreateSend;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
