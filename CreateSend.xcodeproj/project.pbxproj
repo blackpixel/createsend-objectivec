@@ -858,7 +858,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CS;
-				LastUpgradeCheck = 0500;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Campaign Monitor";
 			};
 			buildConfigurationList = AB9122E61563E8610089DE3C /* Build configuration list for PBXProject "CreateSend" */;
