@@ -849,7 +849,7 @@
 			name = CreateSendTests;
 			productName = "createsend-objcTests";
 			productReference = AB9122FC1563E8620089DE3C /* CreateSendTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1170,6 +1170,7 @@
 				GCC_PREFIX_HEADER = "CreateSend/CreateSend-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = CreateSend;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1182,6 +1183,7 @@
 				GCC_PREFIX_HEADER = "CreateSend/CreateSend-Prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = CreateSend;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
